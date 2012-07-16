@@ -1,0 +1,319 @@
+﻿<Window x:Class="ActPlayResponsibly2012.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ActPlayResponsibly2012"
+        xmlns:questions="clr-namespace:ActPlayResponsibly2012.Questions"
+        xmlns:flashMessages="clr-namespace:ActPlayResponsibly2012.FlashMessages"
+        Background="Black"
+        AllowsTransparency="True"
+        Title="Act &amp; Play Responsibly 2012"
+        Height="768" Width="1024"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Loaded="WindowLoaded">
+    <Window.CommandBindings>
+        <CommandBinding Command="Close" CanExecute="CanCloseExecute" Executed="CloseExecuted" />
+    </Window.CommandBindings>
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="BorderBrush" Value="White" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="White" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="BorderBrush" Value="White" />
+            <Setter Property="BorderThickness" Value="3" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="White" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="White" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TeamAvatar" TargetType="Border">
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Width" Value="30" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="3" />
+        </Style>
+        <local:BooleanNOTToVisibilityConverter x:Key="BooleanNOTToVisibilityConverter" />
+        <local:TeamAvatarBorderBrushConverter x:Key="TeamAvatarBorderBrushConverter" />
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <Storyboard x:Key="DiceStoryboard" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="label">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="360"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="BackgroundImageStoryboard" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.3"/>
+            	<EasingDoubleKeyFrame KeyTime="0:0:8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource BackgroundImageStoryboard}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Image x:Name="image" Source="{Binding CurrentTeam.Background}" Stretch="Fill" />
+        <DockPanel LastChildFill="True">
+            <Grid DockPanel.Dock="Top">
+                <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Act (&amp; Play) Responsibly 2012" Foreground="White" Background="Transparent" FontSize="36" FontFamily="{StaticResource {x:Static SystemFonts.CaptionFontFamilyKey}}" FontWeight="Normal" MouseLeftButtonDown="WindowDragMove" />
+                <Button Margin="45,5" Width="30" Content=" " FontWeight="Bold" Foreground="Red" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Transparent" Click="MaximizeWindow" />
+                <Button Margin="5" Width="30" Content="X" FontWeight="Bold" Foreground="Red" VerticalAlignment="Top" HorizontalAlignment="Right" Command="Close" Background="Transparent" />
+            </Grid>
+            <Grid DockPanel.Dock="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
+                <Canvas Width="650" Height="650" Grid.Column="0" Background="Transparent" MouseMove="TeamAvatarMouseMove">
+                    <Image x:Name="GameBoard" Source="{Binding CurrentTeam.GameBoard}" Width="650" Height="650" />
+                </Canvas>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300" />
+                        <RowDefinition />
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderBrush="{Binding CurrentTeam.Id, Converter={StaticResource TeamAvatarBorderBrushConverter}}" BorderThickness="5">
+                                <Image Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding CurrentTeam.Avatar}" />
+                            </Border>
+                            <!--<Image Grid.Row="0" Margin="-20" HorizontalAlignment="Right" VerticalAlignment="Top" Stretch="None" Source="/ActPlayResponsibly2012;component/Images/Teams/Star.png" Visibility="{Binding CurrentTeam.IsHardQuestion, Converter={StaticResource BooleanToVisibilityConverter}}" />-->
+                            <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding CurrentTeam.Name}" Margin="0,0,0,5" FontSize="18" Foreground="White" />
+                        </Grid>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Width="65" Margin="3" Content="Pass" Tag="Lifeline 1" Click="ShowFlashMesages" Visibility="{Binding CurrentTeam.LifeLine1, Converter={StaticResource BooleanNOTToVisibilityConverter}}" />
+                            <Button Width="65" Margin="3" Content="Halt" Tag="Lifeline 2" Click="ShowFlashMesages" Visibility="{Binding CurrentTeam.LifeLine2, Converter={StaticResource BooleanNOTToVisibilityConverter}}" />
+                            <Button Width="65" Margin="3" Content="Deflect" Tag="Lifeline 3" Click="ShowFlashMesages" Visibility="{Binding CurrentTeam.LifeLine3, Converter={StaticResource BooleanNOTToVisibilityConverter}}" />
+                            <Button Width="65" Margin="3" Content="Jump" Tag="Lifeline 4" Click="ShowFlashMesages" Visibility="{Binding CurrentTeam.LifeLine4, Converter={StaticResource BooleanNOTToVisibilityConverter}}" />
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Width="100" Margin="10,0" Content="Next Turn" Command="{Binding NextTurnCommand}" />
+                            <ToggleButton Width="100" Margin="10,0" Content="Hard" IsChecked="{Binding CurrentTeam.IsHardQuestion}" />
+                            <!--<Button Width="100" Margin="10,0" Content="Promote" Command="{Binding PromoteCommand}" Visibility="{Binding CurrentTeam.IsHardQuestion, Converter={StaticResource PromoteButtonVisibilityConverter}}" />
+                            <Button Width="100" Margin="10,0" Content="Demote" Command="{Binding DemoteCommand}" Visibility="{Binding CurrentTeam.IsHardQuestion, Converter={StaticResource DemoteButtonVisibilityConverter}}" />-->
+                        </StackPanel>
+                    </Grid>
+                    <Button Grid.Row="1" Margin="10" Width="150" Height="150" Command="{Binding ThrowDiceCommand}" Click="DiceThrowing"
+                            Background="Transparent" BorderThickness="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Label x:Name="label" Grid.Row="0" Width="100" Height="100" Content="{Binding DiceImage}" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" >
+                                <Label.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Label.RenderTransform>
+                            </Label>
+                        </Grid>
+                    </Button>
+                    <StackPanel Grid.Row="1" Height="30" VerticalAlignment="Bottom" Orientation="Horizontal">
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 1" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 2" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 3" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 4" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 5" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 6" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 7" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 8" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 9" Click="ShowFlashMesages" />
+                        <Button BorderThickness="1" Background="Transparent" Opacity="0.1" Width="30" Height="30" Tag="FlashMessage 10" Click="ShowFlashMesages" />
+                    </StackPanel>
+                    <Grid Grid.Row="2" Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="0.5*" />
+                            <ColumnDefinition Width="0.5*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Content="Current Team" Foreground="White" FontSize="18" VerticalContentAlignment="Center" />
+                        <Button Grid.Row="0" Grid.Column="1" Margin="5" Command="{Binding CurrentTeamMoveBackwardCommand}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Down.png" />
+                        </Button>
+                        <Button Grid.Row="0" Grid.Column="2" Margin="5" Command="{Binding CurrentTeamMoveForwardCommand}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Up.png" />
+                        </Button>
+                        <Label Grid.Row="1" Grid.Column="0" Content="All Teams" Foreground="White" FontSize="18" VerticalContentAlignment="Center" />
+                        <Button Grid.Row="1" Grid.Column="1" Margin="5" Command="{Binding AllTeamsMoveBackwardCommand}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Down.png" />
+                        </Button>
+                        <Button Grid.Row="1" Grid.Column="2" Margin="5" Command="{Binding AllTeamsMoveForwardCommand}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Up.png" />
+                        </Button>
+                        <ComboBox Grid.Row="2" Grid.Column="0" x:Name="TeamMoveSelector" Margin="5" ItemsSource="{Binding Teams}" VerticalContentAlignment="Center">
+                            <ComboBox.BorderBrush>
+                                <SolidColorBrush />
+                            </ComboBox.BorderBrush>
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Margin="3">
+                                        <Image Source="{Binding Avatar}" Width="30" />
+                                        <Label Content="{Binding Name}" VerticalContentAlignment="Center" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                            <ComboBox.Background>
+                                <SolidColorBrush Color="White" />
+                            </ComboBox.Background>
+                        </ComboBox>
+                        <Button Grid.Row="2" Grid.Column="1" Margin="5" Command="{Binding TeamMoveBackwardCommand}" CommandParameter="{Binding SelectedItem, ElementName=TeamMoveSelector}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Down.png" />
+                        </Button>
+                        <Button Grid.Row="2" Grid.Column="2" Margin="5" Command="{Binding TeamMoveForwardCommand}" CommandParameter="{Binding SelectedItem, ElementName=TeamMoveSelector}">
+                            <Image Source="/ActPlayResponsibly2012;component/Images/Teams/Up.png" />
+                        </Button>
+                    </Grid>
+                </Grid>
+                <Canvas Width="650" Height="650">
+                    <Button Content="Question" Canvas.Top="510" Canvas.Left="90" Width="100" Height="50" Tag="Gray" Background="Gray" Click="ShowQuestion" />
+
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="77" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="127" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="177" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="227" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="277" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="327" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="377" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="427" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="477" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="527" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="575" Canvas.Left="577" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+
+                    <Button BorderThickness="0" Canvas.Top="525" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="475" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="425" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="375" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="325" Canvas.Left="577" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+                    <Button BorderThickness="0" Canvas.Top="275" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="225" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="175" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="125" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="75" Canvas.Left="577" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="577" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="527" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="477" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="427" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="377" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="327" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="277" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="227" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="177" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="127" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="77" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="25" Canvas.Left="27" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+
+                    <Button BorderThickness="0" Canvas.Top="75" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="125" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="175" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="225" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="275" Canvas.Left="27" Width="50" Height="50" Tag="Chance" Background="Transparent" Click="ShowFlashMesages" />
+                    <Button BorderThickness="0" Canvas.Top="325" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="375" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="425" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="475" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                    <Button BorderThickness="0" Canvas.Top="525" Canvas.Left="27" Width="50" Height="50" Tag="Gray" Background="Transparent" Click="ShowQuestion" />
+                </Canvas>
+                <Canvas x:Name="DragableContent" Width="650" Height="650" Grid.Column="0" Background="Transparent" MouseMove="TeamAvatarMouseMove" IsHitTestVisible="False">
+                    <Border Style="{StaticResource TeamAvatar}" BorderBrush="DarkRed"
+                            Canvas.Left="{Binding RedTeam.CurrentPosition.X, Mode=OneWay}"
+                            Canvas.Top="{Binding RedTeam.CurrentPosition.Y, Mode=OneWay}">
+                        <Image x:Name="RedAvatar" Source="/ActPlayResponsibly2012;component/Images/Teams/RedTeam.png" />
+                    </Border>
+                    <Border Style="{StaticResource TeamAvatar}" BorderBrush="DarkGreen"
+                            Canvas.Left="{Binding GreenTeam.CurrentPosition.X, Mode=OneWay}"
+                            Canvas.Top="{Binding GreenTeam.CurrentPosition.Y, Mode=OneWay}">
+                        <Image x:Name="GreenAvatar" Source="/ActPlayResponsibly2012;component/Images/Teams/GreenTeam.png" />
+                    </Border>
+                    <Border Style="{StaticResource TeamAvatar}" BorderBrush="DarkBlue"
+                            Canvas.Left="{Binding BlueTeam.CurrentPosition.X, Mode=OneWay}"
+                            Canvas.Top="{Binding BlueTeam.CurrentPosition.Y, Mode=OneWay}">
+                        <Image x:Name="BlueAvatar" Source="/ActPlayResponsibly2012;component/Images/Teams/BlueTeam.png" />
+                    </Border>
+                    <Border Style="{StaticResource TeamAvatar}" BorderBrush="Gold"
+                            Canvas.Left="{Binding YellowTeam.CurrentPosition.X, Mode=OneWay}"
+                            Canvas.Top="{Binding YellowTeam.CurrentPosition.Y, Mode=OneWay}">
+                        <Image x:Name="YellowAvatar" Source="/ActPlayResponsibly2012;component/Images/Teams/YellowTeam.png" />
+                    </Border>
+                </Canvas>
+                <questions:QuestionView Grid.ColumnSpan="2" x:Name="QuestionView"
+                                        DataContext="{Binding CurrentQuestion}"
+                                        Height="650"
+                                        Visibility="Collapsed"
+                                        />
+                <flashMessages:FlashMessageView Grid.ColumnSpan="2" x:Name="FlashMessageView" Width="600" Height="200"
+                                                DataContext="{Binding CurrentFlashMessage}"
+                                                Visibility="Collapsed"
+                                                />
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

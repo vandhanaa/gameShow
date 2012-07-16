@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFlashMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FlashMessage>
+    <Type>Lifeline</Type>
+    <Id>1</Id>
+    <Content>Get an opposing team to answer your question.</Content>
+    <IsTeamListDisplayed>true</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>Lifeline</Type>
+    <Id>2</Id>
+    <Content>Sabotage an opposing team to lose a turn. </Content>
+    <IsTeamListDisplayed>true</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>Lifeline</Type>
+    <Id>3</Id>
+    <Content>Skip a question.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>Lifeline</Type>
+    <Id>4</Id>
+    <Content>Move 2 steps forward.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Poll the audience.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Poll the audience.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Poll the audience.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Poll the audience.   </Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Move 2 steps forward.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Your team miss a turn.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Move 2 steps backward.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Your team gain a turn.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Any 2 countries to move 2 steps forward.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>ChanceCard</Type>
+    <Id>-1</Id>
+    <Content>Any 2 countries to move 2 steps backward.</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>1</Id>
+    <Content>All teams fired their rogue traders. (move 3 steps forward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>2</Id>
+    <Content>All teams executed good risk management practices. (move 4 steps forward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>3</Id>
+    <Content>All teams announced excellent mid year financial results. (move 5 steps forward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>4</Id>
+    <Content>All teams announced excellent year end financial results. (move 6 steps forward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>5</Id>
+    <Content>Major economy boom. (move 7 steps forward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>6</Id>
+    <Content>Rogue traders incurred major losses for all teams. (move 3 steps backward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>7</Id>
+    <Content>Poor risk management practices. Major losses incurred (move 4 steps backward) </Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>8</Id>
+    <Content>Corporate restructuring. (move 5 steps backward)</Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>9</Id>
+    <Content>All teams annouced poor year end financial results. (move 6 steps backward) </Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+  <FlashMessage>
+    <Type>SpecialFlashMessage</Type>
+    <Id>10</Id>
+    <Content>Global economy depression. (move 7 steps backward)   </Content>
+    <IsTeamListDisplayed>false</IsTeamListDisplayed>
+  </FlashMessage>
+</ArrayOfFlashMessage>

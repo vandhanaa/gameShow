@@ -1,0 +1,96 @@
+Lifeline
+1
+true
+Get an opposing team to answer your question.
+Lifeline
+2
+true
+Sabotage an opposing team to lose a turn. 
+Lifeline
+3
+false
+Skip a question.
+Lifeline
+4
+false
+Move 2 steps forward.
+ChanceCard
+-1
+false
+Poll the audience.
+ChanceCard
+-1
+false
+Poll the audience.
+ChanceCard
+-1
+false
+Poll the audience.
+ChanceCard
+-1
+false
+Poll the audience.   
+ChanceCard
+-1
+false
+Move 2 steps forward.
+ChanceCard
+-1
+false
+Your team miss a turn.
+ChanceCard
+-1
+false
+Move 2 steps backward.
+ChanceCard
+-1
+false
+Your team gain a turn.
+ChanceCard
+-1
+false
+Any 2 countries to move 2 steps forward.
+ChanceCard
+-1
+false
+Any 2 countries to move 2 steps backward.
+SpecialFlashMessage
+1
+false
+All teams fired their rogue traders. (move 3 steps forward)
+SpecialFlashMessage
+2
+false
+All teams executed good risk management practices. (move 4 steps forward)
+SpecialFlashMessage
+3
+false
+All teams announced excellent mid year financial results. (move 5 steps forward)
+SpecialFlashMessage
+4
+false
+All teams announced excellent year end financial results. (move 6 steps forward)
+SpecialFlashMessage
+5
+false
+Major economy boom. (move 7 steps forward)
+SpecialFlashMessage
+6
+false
+Rogue traders incurred major losses for all teams. (move 3 steps backward)
+SpecialFlashMessage
+7
+false
+Poor risk management practices. Major losses incurred (move 4 steps backward) 
+SpecialFlashMessage
+8
+false
+Corporate restructuring. (move 5 steps backward)
+SpecialFlashMessage
+9
+false
+All teams annouced poor year end financial results. (move 6 steps backward) 
+SpecialFlashMessage
+10
+false
+Global economy depression. (move 7 steps backward)   

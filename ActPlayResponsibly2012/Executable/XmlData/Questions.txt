@@ -1,0 +1,360 @@
+Alice is a business manager in a technical team that handles specialized processes. While her team is overworked, she is not sure if she should hire more employees. Which of the following should Alice do?
+She shouldn’t hire new employees, as too many employees increases error rate.
+She should hire new employees and schedule regular performance management sessions to reduce risks.
+She should aim to make her team’s processes less specialized so that other teams can help out.
+She should negotiate with clients for longer deadlines.
+B
+Normal
+An application has crashed three times over the past month. Which of the following should not be done?
+Implement regular testing of the application.
+Identify the root cause of the problem and implement preventive controls
+Keep sufficiently detailed records on the cause of the problem and steps taken to solve it.
+Take a reactive stance in solving the root cause of the problem.
+D
+Normal
+John is a technical engineer who is very confident of his coding skills. When writing a script for a new application, he feels certain that the application will never crash. Which of the following should he do?
+Save his time by not building in a failover, as the system will not crash.
+Run a short UAT test by himself then proceed to launch it.
+Build a failover just in case.
+Ask a teammate to test the application and then proceed to launch it.
+C
+Normal
+Serene is on a tight deadline. She finishes her project, but has no time to get her manager’s approval before submitting her project to her client. What should she do?
+Get her manager’s approval even if it means she misses her client’s deadline.
+Double-check her work and submit it without getting her manager’s approval.
+Ask her teammate to look through her project and submit it without her manager’s approval.
+None of the above.
+A
+Normal
+April spots an operational gap in one of her team’s internal processes. As she is a new employee, she hesitates about bringing up the subject to her manager. What can she do?
+She should not mention it, as it can be construed as being impertinent.
+She should let it be, and wait for someone else to spot it.
+She can highlight the issue to her manager and come up with a recommended solution.
+None of the above.
+C
+Normal
+Wei Yi gets data from four different systems, manually reworks them and compiles it into a single report that she sends out to stakeholders. Which of the following is the best way for her to reduce risk?
+An automatic reconciliation tool between the different systems.
+Separate the data into four individual reports.
+Ask the owners of each of the four systems to send out the reports.
+Be very careful when reworking the data.
+A
+Hard
+Which of the following best describes what detective control is?
+A control that detects undesirable acts. It provides evidence that a loss has occurred but does not prevent it from happening.
+A control that detects undesirable acts. It provides evidence that a loss has occurred and prevents it from happening.
+A proactive control that deters or prevents undesirable events from happening.
+A control designed to correct errors or irregularities that have been detected.
+A
+Normal
+Which of the following is an example of a preventive control?
+Manager access review
+Automated back-up power generator
+Audit
+Separation of duties
+D
+Hard
+Which of the following is an example of an automated control?
+Exception reports
+Proper authorization
+Auto reconciliations between multiple systems
+Standards, policies and procedures
+C
+Normal
+What is the GT&O Control Framework?
+The minimum set of controls that must be in place, with corresponding control objectives. Individual lines of businesses may supplement the framework where desired.
+The minimum set of controls that must be in place, with corresponding control objectives. Individual lines of businesses must adhere strictly to the framework.
+The conclusive set of controls that must be in place, with corresponding control objectives. Individual lines of businesses may supplement the framework where desired.
+The conclusive set of controls that must be in place, with corresponding control objectives. . Individual lines of businesses must adhere strictly to the framework.
+A
+Hard
+How many operating principles outline the way technology and operations are managed and executed across the enterprise?
+12
+15
+18
+20
+B
+Hard
+_______ is a business-oriented structure that provides an end-to-end view of functions and sets forth expectations for scope and execution.
+Operating Principles (Standards)
+Control Processes
+Control Objectives
+Control Procedures & Requirements (KCIs)
+B
+Hard
+The 15 operating principles 
+Create a common language and drive identification of thematic risks.
+Identify gaps and best practices to strengthen controls and mitigate risk.
+Outline how technology and operations are managed and executed across the enterprise.
+Align to Control Objectives – they are tested/managed for effectiveness.
+C
+Hard
+What is a scorecard?
+Central repository to track and monitor the effectiveness of your processes, controls and risks.
+Defines the requirements that will be assessed through observation, inquiry or substantive testing.
+Set of fundamental controls that must be in place to prevent financial or information loss in an organization.
+Indicator of risky activity of emerging risk.
+A
+Normal
+What is a Key Risk Indicator?
+An indicator of business performance against business objectives.
+An indicator of risky activity or emerging risk.
+An indicator of control performance as designed.
+None of the above.
+B
+Normal
+Which of the following is an example of a control procedure?
+Terminated users acting maliciously.
+Deprovisioning user access in a timely manner.
+Ensure application access is disabled or removed for terminated users.
+Addressing, requesting, establishing, issuing, suspending, modifying and closing user accounts and related user privileges  with a set of user account management procedures.
+B
+Normal
+Which of the following is a control for incomplete or inaccurate transactions?
+Evidence of approval must be retained in line with the Record Retention Standard.
+Segregation of where request originated and where it is executed.
+Ensure Anti-Money Laundering (AML) and Know Your Client (KYC) checks have been performed.
+Marketing: opt in opt out.
+A
+Hard
+Which of the steps below follow directly after the identification of gaps where controls do not exist?
+Risk identification.
+Implementation of controls to mitigate the risk.
+Identification of gaps where controls are not effective enough.
+Monitoring of ongoing control performances.
+C
+Hard
+The GT&O Enhanced Control Framework serves to 
+Compare current effectiveness to target effectiveness.
+Verify and monitor results and provide proof points for risks mitigated.
+Compare current controls against control framework.
+None of the above.
+C
+Normal
+What is the industry standard that provides control objectives for Operations and Service functions?
+Enhanced Control Framework
+Control Assessment Process
+Control Objectives for Information and related Technology
+Corporate Risk Framework
+C
+Hard
+What is the Control Effectiveness Assessment used for?
+To identify where there are gaps between current control effectiveness and target control effectiveness.
+To analyse testing results and assign a standard rating that can be compared across GT&O.
+To measure actual performance through testing against defined requirements.
+To define the requirements that will be assessed through observation, inquiry or substantive testing.
+A
+Hard
+What constitutes strong business continuity?
+Management anticipates and responds to key aspects of risk associated with operational changes, systems development, emerging technologies and external threats.
+Management effectively analyzes risks and develops robust operating processes, internal controls and audit coverage, which are consistently applied across the organization.
+Management comprehensively plans for continuity and reliability of services, including services provided by third-parties.
+Appropriate processes and controls exist to manage data and protect it from unauthorized change or disclosure.
+C
+Normal
+Management may not take timely and appropriate actions to respond to operational changes, systems development, emerging technologies and external threats. In other words, management has weak _____
+Governance and staffing.
+Management of data.
+Understanding of emerging risks.
+Response.
+D
+Hard
+Which of the following is an example of a Key Control Indicator in the reconciliations process?
+Number of reconciliations completed correctly.
+Regularly scheduled performance management planning sessions with key SMEs.
+The percentage of talent planning discussions past due.
+The percentage of employees in the role for less than 12 months.
+C
+Normal
+Which of the following is an example of a Key Risk Indicator in business continuity?
+Number of lost clients due to technology instability.
+Disruption of operations or services.
+Percentage of applications successfully tested.
+Number of outages leading to a disruption of operations or services during business hours.
+D
+Normal
+What does RCSA stand for?
+Risk and Control Standards Agreement
+Risk and Control Self-Assessment
+Risk and Control Self-Accordance
+Risk and Control Standards Analysis
+B
+Normal
+How frequently are formal RCSA reports made?
+Bi-monthly
+Quarterly
+Half-Yearly
+Annually
+B
+Hard
+What is Operational Risk ?
+The risk that a change in laws and regulations will materially impact a security, business, sector or market. 
+The risk of a loss arising from a poor strategic business decision.
+The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events.
+The risk to earnings, capital and reputation associated with a failure to comply with an increasing array of regulatory requirements and expectations.
+C
+Normal
+Which of these is a key indicator of control for business continuity performance?
+Regular planning sessions with key SMEs.
+Regular manager access reviews.
+Regular scheduled performance management.
+Regular scheduled testing of applications.
+D
+Normal
+Which of these is not an example of detective control in Businesses?
+Audits
+Approval levels
+Reviews
+Exception reports
+B
+Normal
+Which of these control methods should be used once an undesirable event has been detected in order to rectify it?
+Detective Control
+Preventive Control
+Corrective control
+Automated Control
+C
+Normal
+Scorecards are used to 
+Measure business performance against business goals.
+Identify missing controls.
+Identify current activities with risk or emerging risk.
+Demonstrate how we are moving the needle in strengthening our controls.
+D
+Normal
+Which of the following is not a method of Business Control?
+Self inspection as part of the control management system
+Documentation, Monitoring and Enforcement of mitigating action plans.
+Modeling and testing of all technology infrastructure and application changes.
+Root cause analysis of errors, defects and operational losses
+C
+Normal
+Define Control.
+A related group of activities and tasks that produce a consistent,  reliable, repeatable outcome and create value for the bank and the party or parties with which it interacts.
+The processes the Company has in place to reduce the severity of operational losses or to eliminate altogether the chance of operational risk events.
+A set of generally accepted measures, indicators, processes and best practices, to assist them in maximizing the benefits derived through the use of information technology.
+Top of the house statements that guide decision making in alignment with BAC’s purpose, vision and strategy.
+B
+Hard
+Expand COBIT
+Controlled Operations for Information related Technology
+Control Objectives for Internal Risk Testing
+Controlled Operations for Internal Risk Testing
+Control Objectives for Information and related Technology
+D
+Normal
+_____ are the test level that assess control effectiveness.
+Operating Principles
+Control Objectives
+Control Procedures and Requirements
+Control Processes
+C
+Normal
+What does ENACT stand for?
+Enterprise Navigation and Associate Communication Tool
+Emergency Notification and Associate Communication Tool
+Enterprise Notification and Associate Contact Tool
+Emergency Navigation and Associate Contact Tool
+B
+Normal
+The bank is rolling out LDRPS as the enterprise database repository for our business recovery plans and technical recovery plans. What does LDRPS stand for?
+LOB Disaster Recovery Planning System
+LOB Disruption Recovery Program System
+Living Disaster Recovery Planning System
+Long-term Disruption Recovery Planning System
+C
+Normal
+All information (data) at Bank of America must be classified by the information owners. Security controls, labeling, storage and data destruction requirements are based upon the classification of the data.  What are the information classifications used in the bank?
+Public Information, Proprietary Information and Private Information
+Public Information, Proprietary Information and Confidential Information
+Public Information, Private Information and Confidential Information
+Proprietary Information, Private Information and Confidential Information
+B 
+Normal
+Each Line of Business (LOB) MUST maintain recovery plan documentation, including, but not limited to:
+Business Impact Analysis (BIA)
+Business Recovery Plan (BRP)
+Technical Recovery Plans (TRP)
+All the above
+D 
+Normal
+Which of the following is one of the responsibilities of Line of Business associates in the enhanced risk framework?
+To serve our clients’ financial needs and to protect the company
+To set policies, standards and limits within the Board-approved risk appetite
+Provide risk reporting and monitoring
+None of the above.
+A
+Hard
+In setting the bank’s Risk Appetite, risk limits are established by: 
+The Operational Risk Committee for operational and compliance risk limits and standards 
+The Asset Liability & Market Risk Committee for capital, liquidity, balance sheet and market risk 
+The Credit Risk Committee for credit risk limits 
+All the above
+D
+Hard
+Responsibilities of Senior Business Executives in the Data Management Accountability Policy do NOT include 
+Completing Integrated Data Management Program Training 
+Appropriating necessary funding 
+Assigning Data Stewards to each System 
+Assigning Data Custodians to each System 
+A 
+Hard
+What is a primary credit risk mitigation technique that aims to reduce the exposure to counterparty and optimizing the use of counterparty credit lines?
+Client Valuation
+Collateralization
+Authorization
+All of the above
+B
+Normal
+Settlement events that occur during the life of derivatives and securities transactions are called Life-Cycle events that must be satisfactorily monitored and correctly processed. Which of the following are examples of Life-Cycle Events?
+Corporate Actions and dividends
+Exercise of warrants
+Loan Margin changes
+All of the above.
+D
+Normal
+Global Markets Operations may receive instructions for the normal business practice of moving Enterprise or Client assets via High Risk Media (HRM), which warrant greater control. Which of the following is NOT considered a HRM?
+Fax instructions
+Phone instructions
+SWIFT message types
+Email
+C
+Normal
+Any event involving an issued security or instrument is known as
+Corporate Actions
+Asset Servicing events
+Both of the above
+None of the above
+B  
+Hard
+Our Operations units have controls to ensure that all settlements and payments are valid and are performed accurately and timely. Settlement processes must be segregated from:
+Maintenance of reference or client data
+Maintenance of settlement instruction
+Preparation and approval of  reconciliations
+All the above
+D
+Hard
+An event that results in undesired or unintended financial consequences will be classified as an Operational Loss Event if it is associated with…
+Natural disasters
+Employment practices and workplace safety
+Changes in regulator policies
+None of the above 
+B
+Hard
+Six Sigma outlines the importance of reducing defects, increasing client satisfaction, increasing profitability and engaging employees. Which of the following is NOT one of the key objectives of Six Sigma?
+Client Focus
+Manager Focus
+Shareholder Focus
+Employee Focus
+B
+Normal
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <QuestionContent>Alice is a business manager in a technical team that handles specialized processes. While her team is overworked, she is not sure if she should hire more employees. Which of the following should Alice do?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>She shouldn�t hire new employees, as too many employees increases error rate.</A>
+    <B>She should hire new employees and schedule regular performance management sessions to reduce risks.</B>
+    <C>She should aim to make her team�s processes less specialized so that other teams can help out.</C>
+    <D>She should negotiate with clients for longer deadlines.</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>An application has crashed three times over the past month. Which of the following should not be done?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Implement regular testing of the application.</A>
+    <B>Identify the root cause of the problem and implement preventive controls</B>
+    <C>Keep sufficiently detailed records on the cause of the problem and steps taken to solve it.</C>
+    <D>Take a reactive stance in solving the root cause of the problem.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>John is a technical engineer who is very confident of his coding skills. When writing a script for a new application, he feels certain that the application will never crash. Which of the following should he do?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Save his time by not building in a failover, as the system will not crash.</A>
+    <B>Run a short UAT test by himself then proceed to launch it.</B>
+    <C>Build a failover just in case.</C>
+    <D>Ask a teammate to test the application and then proceed to launch it.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Serene is on a tight deadline. She finishes her project, but has no time to get her manager�s approval before submitting her project to her client. What should she do?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Get her manager�s approval even if it means she misses her client�s deadline.</A>
+    <B>Double-check her work and submit it without getting her manager�s approval.</B>
+    <C>Ask her teammate to look through her project and submit it without her manager�s approval.</C>
+    <D>None of the above.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>April spots an operational gap in one of her team�s internal processes. As she is a new employee, she hesitates about bringing up the subject to her manager. What can she do?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>She should not mention it, as it can be construed as being impertinent.</A>
+    <B>She should let it be, and wait for someone else to spot it.</B>
+    <C>She can highlight the issue to her manager and come up with a recommended solution.</C>
+    <D>None of the above.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Wei Yi gets data from four different systems, manually reworks them and compiles it into a single report that she sends out to stakeholders. Which of the following is the best way for her to reduce risk?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>An automatic reconciliation tool between the different systems.</A>
+    <B>Separate the data into four individual reports.</B>
+    <C>Ask the owners of each of the four systems to send out the reports.</C>
+    <D>Be very careful when reworking the data.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following best describes what detective control is?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>A control that detects undesirable acts. It provides evidence that a loss has occurred but does not prevent it from happening.</A>
+    <B>A control that detects undesirable acts. It provides evidence that a loss has occurred and prevents it from happening.</B>
+    <C>A proactive control that deters or prevents undesirable events from happening.</C>
+    <D>A control designed to correct errors or irregularities that have been detected.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is an example of a preventive control?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Manager access review</A>
+    <B>Automated back-up power generator</B>
+    <C>Audit</C>
+    <D>Separation of duties</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is an example of an automated control?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Exception reports</A>
+    <B>Proper authorization</B>
+    <C>Auto reconciliations between multiple systems</C>
+    <D>Standards, policies and procedures</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is the GT&amp;O Control Framework?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>The minimum set of controls that must be in place, with corresponding control objectives. Individual lines of businesses may supplement the framework where desired.</A>
+    <B>The minimum set of controls that must be in place, with corresponding control objectives. Individual lines of businesses must adhere strictly to the framework.</B>
+    <C>The conclusive set of controls that must be in place, with corresponding control objectives. Individual lines of businesses may supplement the framework where desired.</C>
+    <D>The conclusive set of controls that must be in place, with corresponding control objectives. . Individual lines of businesses must adhere strictly to the framework.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>How many operating principles outline the way technology and operations are managed and executed across the enterprise?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>12</A>
+    <B>15</B>
+    <C>18</C>
+    <D>20</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>_______ is a business-oriented structure that provides an end-to-end view of functions and sets forth expectations for scope and execution.</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Operating Principles (Standards)</A>
+    <B>Control Processes</B>
+    <C>Control Objectives</C>
+    <D>Control Procedures &amp; Requirements (KCIs)</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>The 15 operating principles </QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Create a common language and drive identification of thematic risks.</A>
+    <B>Identify gaps and best practices to strengthen controls and mitigate risk.</B>
+    <C>Outline how technology and operations are managed and executed across the enterprise.</C>
+    <D>Align to Control Objectives � they are tested/managed for effectiveness.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is a scorecard?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Central repository to track and monitor the effectiveness of your processes, controls and risks.</A>
+    <B>Defines the requirements that will be assessed through observation, inquiry or substantive testing.</B>
+    <C>Set of fundamental controls that must be in place to prevent financial or information loss in an organization.</C>
+    <D>Indicator of risky activity of emerging risk.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is a Key Risk Indicator?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>An indicator of business performance against business objectives.</A>
+    <B>An indicator of risky activity or emerging risk.</B>
+    <C>An indicator of control performance as designed.</C>
+    <D>None of the above.</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is an example of a control procedure?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Terminated users acting maliciously.</A>
+    <B>Deprovisioning user access in a timely manner.</B>
+    <C>Ensure application access is disabled or removed for terminated users.</C>
+    <D>Addressing, requesting, establishing, issuing, suspending, modifying and closing user accounts and related user privileges  with a set of user account management procedures.</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is a control for incomplete or inaccurate transactions?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Evidence of approval must be retained in line with the Record Retention Standard.</A>
+    <B>Segregation of where request originated and where it is executed.</B>
+    <C>Ensure Anti-Money Laundering (AML) and Know Your Client (KYC) checks have been performed.</C>
+    <D>Marketing: opt in opt out.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the steps below follow directly after the identification of gaps where controls do not exist?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Risk identification.</A>
+    <B>Implementation of controls to mitigate the risk.</B>
+    <C>Identification of gaps where controls are not effective enough.</C>
+    <D>Monitoring of ongoing control performances.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>The GT&amp;O Enhanced Control Framework serves to </QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Compare current effectiveness to target effectiveness.</A>
+    <B>Verify and monitor results and provide proof points for risks mitigated.</B>
+    <C>Compare current controls against control framework.</C>
+    <D>None of the above.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is the industry standard that provides control objectives for Operations and Service functions?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Enhanced Control Framework</A>
+    <B>Control Assessment Process</B>
+    <C>Control Objectives for Information and related Technology</C>
+    <D>Corporate Risk Framework</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is the Control Effectiveness Assessment used for?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>To identify where there are gaps between current control effectiveness and target control effectiveness.</A>
+    <B>To analyse testing results and assign a standard rating that can be compared across GT&amp;O.</B>
+    <C>To measure actual performance through testing against defined requirements.</C>
+    <D>To define the requirements that will be assessed through observation, inquiry or substantive testing.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What constitutes strong business continuity?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Management anticipates and responds to key aspects of risk associated with operational changes, systems development, emerging technologies and external threats.</A>
+    <B>Management effectively analyzes risks and develops robust operating processes, internal controls and audit coverage, which are consistently applied across the organization.</B>
+    <C>Management comprehensively plans for continuity and reliability of services, including services provided by third-parties.</C>
+    <D>Appropriate processes and controls exist to manage data and protect it from unauthorized change or disclosure.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Management may not take timely and appropriate actions to respond to operational changes, systems development, emerging technologies and external threats. In other words, management has weak _____</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Governance and staffing.</A>
+    <B>Management of data.</B>
+    <C>Understanding of emerging risks.</C>
+    <D>Response.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is an example of a Key Control Indicator in the reconciliations process?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Number of reconciliations completed correctly.</A>
+    <B>Regularly scheduled performance management planning sessions with key SMEs.</B>
+    <C>The percentage of talent planning discussions past due.</C>
+    <D>The percentage of employees in the role for less than 12 months.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is an example of a Key Risk Indicator in business continuity?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Number of lost clients due to technology instability.</A>
+    <B>Disruption of operations or services.</B>
+    <C>Percentage of applications successfully tested.</C>
+    <D>Number of outages leading to a disruption of operations or services during business hours.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What does RCSA stand for?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Risk and Control Standards Agreement</A>
+    <B>Risk and Control Self-Assessment</B>
+    <C>Risk and Control Self-Accordance</C>
+    <D>Risk and Control Standards Analysis</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>How frequently are formal RCSA reports made?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Bi-monthly</A>
+    <B>Quarterly</B>
+    <C>Half-Yearly</C>
+    <D>Annually</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is Operational Risk ?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>The risk that a change in laws and regulations will materially impact a security, business, sector or market. </A>
+    <B>The risk of a loss arising from a poor strategic business decision.</B>
+    <C>The risk of loss resulting from inadequate or failed internal processes, people and systems or from external events.</C>
+    <D>The risk to earnings, capital and reputation associated with a failure to comply with an increasing array of regulatory requirements and expectations.</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of these is a key indicator of control for business continuity performance?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Regular planning sessions with key SMEs.</A>
+    <B>Regular manager access reviews.</B>
+    <C>Regular scheduled performance management.</C>
+    <D>Regular scheduled testing of applications.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of these is not an example of detective control in Businesses?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Audits</A>
+    <B>Approval levels</B>
+    <C>Reviews</C>
+    <D>Exception reports</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of these control methods should be used once an undesirable event has been detected in order to rectify it?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Detective Control</A>
+    <B>Preventive Control</B>
+    <C>Corrective control</C>
+    <D>Automated Control</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Scorecards are used to </QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Measure business performance against business goals.</A>
+    <B>Identify missing controls.</B>
+    <C>Identify current activities with risk or emerging risk.</C>
+    <D>Demonstrate how we are moving the needle in strengthening our controls.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is not a method of Business Control?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Self inspection as part of the control management system</A>
+    <B>Documentation, Monitoring and Enforcement of mitigating action plans.</B>
+    <C>Modeling and testing of all technology infrastructure and application changes.</C>
+    <D>Root cause analysis of errors, defects and operational losses</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Define Control.</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>A related group of activities and tasks that produce a consistent,  reliable, repeatable outcome and create value for the bank and the party or parties with which it interacts.</A>
+    <B>The processes the Company has in place to reduce the severity of operational losses or to eliminate altogether the chance of operational risk events.</B>
+    <C>A set of generally accepted measures, indicators, processes and best practices, to assist them in maximizing the benefits derived through the use of information technology.</C>
+    <D>Top of the house statements that guide decision making in alignment with BAC�s purpose, vision and strategy.</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Expand COBIT</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Controlled Operations for Information related Technology</A>
+    <B>Control Objectives for Internal Risk Testing</B>
+    <C>Controlled Operations for Internal Risk Testing</C>
+    <D>Control Objectives for Information and related Technology</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>_____ are the test level that assess control effectiveness.</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Operating Principles</A>
+    <B>Control Objectives</B>
+    <C>Control Procedures and Requirements</C>
+    <D>Control Processes</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What does ENACT stand for?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Enterprise Navigation and Associate Communication Tool</A>
+    <B>Emergency Notification and Associate Communication Tool</B>
+    <C>Enterprise Notification and Associate Contact Tool</C>
+    <D>Emergency Navigation and Associate Contact Tool</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>The bank is rolling out LDRPS as the enterprise database repository for our business recovery plans and technical recovery plans. What does LDRPS stand for?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>LOB Disaster Recovery Planning System</A>
+    <B>LOB Disruption Recovery Program System</B>
+    <C>Living Disaster Recovery Planning System</C>
+    <D>Long-term Disruption Recovery Planning System</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>All information (data) at Bank of America must be classified by the information owners. Security controls, labeling, storage and data destruction requirements are based upon the classification of the data.  What are the information classifications used in the bank?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Public Information, Proprietary Information and Private Information</A>
+    <B>Public Information, Proprietary Information and Confidential Information</B>
+    <C>Public Information, Private Information and Confidential Information</C>
+    <D>Proprietary Information, Private Information and Confidential Information</D>
+    <CorrectAnswer>B </CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Each Line of Business (LOB) MUST maintain recovery plan documentation, including, but not limited to:</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Business Impact Analysis (BIA)</A>
+    <B>Business Recovery Plan (BRP)</B>
+    <C>Technical Recovery Plans (TRP)</C>
+    <D>All the above</D>
+    <CorrectAnswer>D </CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which of the following is one of the responsibilities of Line of Business associates in the enhanced risk framework?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>To serve our clients� financial needs and to protect the company</A>
+    <B>To set policies, standards and limits within the Board-approved risk appetite</B>
+    <C>Provide risk reporting and monitoring</C>
+    <D>None of the above.</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>In setting the bank�s Risk Appetite, risk limits are established by: </QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>The Operational Risk Committee for operational and compliance risk limits and standards </A>
+    <B>The Asset Liability &amp; Market Risk Committee for capital, liquidity, balance sheet and market risk </B>
+    <C>The Credit Risk Committee for credit risk limits </C>
+    <D>All the above</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Responsibilities of Senior Business Executives in the Data Management Accountability Policy do NOT include </QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Completing Integrated Data Management Program Training </A>
+    <B>Appropriating necessary funding </B>
+    <C>Assigning Data Stewards to each System </C>
+    <D>Assigning Data Custodians to each System </D>
+    <CorrectAnswer>A </CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>What is a primary credit risk mitigation technique that aims to reduce the exposure to counterparty and optimizing the use of counterparty credit lines?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Client Valuation</A>
+    <B>Collateralization</B>
+    <C>Authorization</C>
+    <D>All of the above</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Settlement events that occur during the life of derivatives and securities transactions are called Life-Cycle events that must be satisfactorily monitored and correctly processed. Which of the following are examples of Life-Cycle Events?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Corporate Actions and dividends</A>
+    <B>Exercise of warrants</B>
+    <C>Loan Margin changes</C>
+    <D>All of the above.</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Global Markets Operations may receive instructions for the normal business practice of moving Enterprise or Client assets via High Risk Media (HRM), which warrant greater control. Which of the following is NOT considered a HRM?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Fax instructions</A>
+    <B>Phone instructions</B>
+    <C>SWIFT message types</C>
+    <D>Email</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Any event involving an issued security or instrument is known as</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Corporate Actions</A>
+    <B>Asset Servicing events</B>
+    <C>Both of the above</C>
+    <D>None of the above</D>
+    <CorrectAnswer>B  </CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Our Operations units have controls to ensure that all settlements and payments are valid and are performed accurately and timely. Settlement processes must be segregated from:</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Maintenance of reference or client data</A>
+    <B>Maintenance of settlement instruction</B>
+    <C>Preparation and approval of  reconciliations</C>
+    <D>All the above</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>An event that results in undesired or unintended financial consequences will be classified as an Operational Loss Event if it is associated with�</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Natural disasters</A>
+    <B>Employment practices and workplace safety</B>
+    <C>Changes in regulator policies</C>
+    <D>None of the above </D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Six Sigma outlines the importance of reducing defects, increasing client satisfaction, increasing profitability and engaging employees. Which of the following is NOT one of the key objectives of Six Sigma?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>Client Focus</A>
+    <B>Manager Focus</B>
+    <C>Shareholder Focus</C>
+    <D>Employee Focus</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+</ArrayOfQuestion>

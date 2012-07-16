@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfQuestion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Question>
+    <QuestionContent>Grand Central Terminal, Park Avenue, New York is the world's</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Red</Category>
+    <A>largest railway station</A>
+    <B>highest railway station</B>
+    <C>longest railway station</C>
+    <D>None of the above</D>
+    <CorrectAnswer>A</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Entomology is the science that studies</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Red</Category>
+    <A>Behavior of human beings</A>
+    <B>Insects</B>
+    <C>The origin and history of technical and scientific terms</C>
+    <D>The formation of rocks</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>For which of the following disciplines is Nobel Prize awarded?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Blue</Category>
+    <A>Physics and Chemistry</A>
+    <B>Physiology or Medicine</B>
+    <C>Literature, Peace and Economics</C>
+    <D>All of the above</D>
+    <CorrectAnswer>D</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Who is the father of Geometry?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Blue</Category>
+    <A>Aristotle</A>
+    <B>Euclid</B>
+    <C>Pythagoras</C>
+    <D>Kepler</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>'OS' computer abbreviation usually means ?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Yellow</Category>
+    <A>Order of Significance</A>
+    <B>Open Software</B>
+    <C>Operating System</C>
+    <D>Optical Sensor</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>'.MOV' extension refers usually to what kind of file?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Yellow</Category>
+    <A>Image file</A>
+    <B>Animation/movie file</B>
+    <C>Audio file</C>
+    <D>MS Office document</D>
+    <CorrectAnswer>B</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Track and field star Carl Lewis won how many gold medals at the 1984 Olympic games?</QuestionContent>
+    <Difficulty>Normal</Difficulty>
+    <Category>Green</Category>
+    <A>Two</A>
+    <B>Three</B>
+    <C>Four</C>
+    <D>Eight</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+  <Question>
+    <QuestionContent>Which player has scored the most runs in a single Test innings?</QuestionContent>
+    <Difficulty>Hard</Difficulty>
+    <Category>Green</Category>
+    <A>Graham Gooch</A>
+    <B>Matthew Hayden</B>
+    <C>Brian Lara</C>
+    <D>Agarkar</D>
+    <CorrectAnswer>C</CorrectAnswer>
+  </Question>
+</ArrayOfQuestion>
